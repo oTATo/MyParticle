@@ -7,6 +7,8 @@ private:
 	int particleNum;
 	Particle *pParticleList;
 
+	virtual void procWeight() = 0;
+
 public:
 	ParticleFilter(){}
 
@@ -18,7 +20,15 @@ public:
 		pParticleList = new Particle [particleNum];
 	}
 
-	virtual void procWeight() = 0;
+	void update()
+	{
+		procWeight();
+	}
+
+	void getData()
+	{
+
+	}
 };
 
 int main()
