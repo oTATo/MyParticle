@@ -18,7 +18,6 @@ public:
 		pParticleList = new Particle [particleNum];
 	}
 
-
 	virtual void procWeight() = 0;
 };
 
