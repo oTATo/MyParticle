@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 template <typename Particle>
-class PartcleFilter
+class ParticleFilter
 {
 private:
 	int particleNum;
